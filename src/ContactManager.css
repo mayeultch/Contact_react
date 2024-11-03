@@ -1,0 +1,130 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #23272f;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Barre de recherche stylée */
+.search-bar {
+  width: 80%;
+  padding: 12px;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 65px;
+  border: 2px solid #007bff; /* Bordure plus épaisse et colorée */
+  background-color: #eaf4ff; /* Fond bleu très léger */
+  border-radius: 25px; /* Bordure arrondie */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Effet au survol pour la barre de recherche */
+.search-bar:focus {
+  outline: none;
+  border-color: #0056b3; /* Bordure bleu foncé lorsqu'on tape */
+  background-color: #d0e6ff; /* Fond légèrement plus foncé au focus */
+}
+
+/* Style du formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn-add {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  border: 2px solid transparent; /* Bordure ajoutée */
+  border: 2px solid #004080; /* Bordure sur hover */
+}
+
+/* Style de la liste des contacts */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style des informations du contact */
+.contact-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.contact-info span {
+  margin-bottom: 5px;
+}
+
+/* Style des boutons */
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn-delete {
+  padding: 8px 12px;
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-delete:hover {
+  background-color: #d40000;
+}
